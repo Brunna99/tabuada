@@ -1,0 +1,19 @@
+body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  background-color: rgb(96, 12, 176);
+}
+
+main{
+  min-height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main div#tabuada{
+  height: 100%;
+  width: 50%;
+}
