@@ -46,7 +46,7 @@ main div#tabuada input{
   border-radius: 9999px;
 }
 
-main div#tabuada button{
+main div#tabuada button#button{
   background-color: rgb(255, 230, 0);
   color:rgb(114, 0, 220);
   font-weight: 900;
@@ -61,6 +61,13 @@ main div#resultado{
   min-height: 200px;
 }
 
+main div#resultado.ativo{
+  display:block;
+}
+
+main div#resultado.inativo{
+  display:none;
+}
 main div#resultado .tabela{
  color: white; 
 }

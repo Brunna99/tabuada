@@ -1,9 +1,9 @@
-const form = document.getElementById("form-tabuada");
+const botao = document.getElementById("button");
 
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
+botao.addEventListener("click", function () {
   const numero = document.getElementById("numero").value;
   const resultado = document.getElementById("resultado");
+  resultado.classList.remove("inativo");
 
   const tabela = document.createElement("table");
   tabela.classList.add("tabela");
@@ -27,3 +27,7 @@ form.addEventListener("submit", function (event) {
     }
   }
 });
+
+function limparAoClicar() {
+  tabela.remove();
+}
