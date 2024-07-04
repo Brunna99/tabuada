@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tabuada - JavaScript</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main>
-      <div id="tabuada">
-        <h1>Tabuada</h1>
-        <input
-          type="number"
-          placeholder="Digite seu número"
-          min="1"
-          id="numero"
-        />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabuada - JavaScript</title>
+  <link rel="stylesheet" href="./styles/index.css" />
+</head>
+
+<body>
+  <main>
+    <div id="tabuada">
+      <h1>Tabuada</h1>
+      <div class="form">
+        <input type="number" placeholder="Digite seu número" min="1" id="numero" />
         <button type="button" id="button">X</button>
-        <button type="button" onclick="limparAoClicar()">Limpar</button>
       </div>
-      <div id="resultado"></div>
-    </main>
-    <script src="script.js"></script>
-  </body>
+      <a href="tabuada.html" id="viewFullTable">Ver tabuada completa</a>
+    </div>
+    <div id="resultado"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
 </html>

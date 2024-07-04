@@ -13,10 +13,9 @@ main{
   align-items: center;
 }
 
-main div#tabuada{
+main div{
   height: 100%;
   width: 50%;
-  border: 2px dashed white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,50 +23,30 @@ main div#tabuada{
   gap: 10px;
 }
 
-main div#tabuada h1{
+main div h1{
   color:white;
   font-family: sans-serif;
   text-transform: uppercase;
   font-weight: 900;
 }
 
-main div#tabuada form{
-  display: flex;
-  width: 100%;
-  border: 1px solid white;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+main div table{
+  color: white;
+  border-collapse: collapse;
+  border: 1px solid yellow;
 }
 
-main div#tabuada input{
-  padding:10px 20px;
-  border: 3px solid rgb(255, 230, 0);
-  border-radius: 9999px;
+main div table td{
+  border: 1px solid yellow;
 }
 
-main div#tabuada button#button{
+main div a{
   background-color: rgb(255, 230, 0);
   color:rgb(114, 0, 220);
   font-weight: 900;
   border-radius: 9999px;
-  width: 48px;
-  height: 48px;
   font-size: 20px;
   cursor:pointer;
-}
-
-main div#resultado{
-  min-height: 200px;
-}
-
-main div#resultado.ativo{
-  display:block;
-}
-
-main div#resultado.inativo{
-  display:none;
-}
-main div#resultado .tabela{
- color: white; 
+  padding: 10px 20px;
+  text-decoration: none;
 }

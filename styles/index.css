@@ -1,0 +1,80 @@
+body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  background-color: rgb(96, 12, 176);
+}
+
+main{
+  min-height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main div#tabuada{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+main div#tabuada h1{
+  color:white;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+main div#tabuada .form{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+main div#tabuada .form input{
+  padding:10px 20px;
+  border: 3px solid rgb(255, 230, 0);
+  border-radius: 9999px;
+}
+
+main div#tabuada .form button#button{
+  background-color: rgb(255, 230, 0);
+  color:rgb(114, 0, 220);
+  font-weight: 900;
+  border-radius: 9999px;
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  cursor:pointer;
+}
+
+main div#tabuada a#viewFullTable{
+  background-color: white;
+  color: rgb(96, 12, 176);
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 150%;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-family: sans-serif;
+}
+
+main div#tabuada a#viewFullTable:hover{
+  background-color: yellow;
+}
+
+main div#resultado{
+  min-height: 200px;
+}
+
+main div#resultado .tabela{
+ color: white; 
+} 

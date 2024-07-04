@@ -3,7 +3,7 @@ const botao = document.getElementById("button");
 botao.addEventListener("click", function () {
   const numero = document.getElementById("numero").value;
   const resultado = document.getElementById("resultado");
-  resultado.classList.remove("inativo");
+  limparAoClicar();
 
   const tabela = document.createElement("table");
   tabela.classList.add("tabela");
@@ -19,7 +19,7 @@ botao.addEventListener("click", function () {
 
   resultado.appendChild(tabela);
 
-  for (let i = numero; i <= numero; i++) {
+  for (let i = numero; i == numero; i++) {
     for (let y = 1; y <= 10; y++) {
       const linha = document.createElement("tr");
       linha.innerText = i + " * " + y + " = " + i * y;
@@ -29,5 +29,5 @@ botao.addEventListener("click", function () {
 });
 
 function limparAoClicar() {
-  tabela.remove();
+  resultado.innerHTML = "";
 }
